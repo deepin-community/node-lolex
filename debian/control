@@ -1,0 +1,30 @@
+Source: node-lolex
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Section: javascript
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-browserify-lite
+ , node-type-detect
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-lolex
+Vcs-Git: https://salsa.debian.org/js-team/node-lolex.git
+Homepage: https://github.com/sinonjs/lolex
+Rules-Requires-Root: no
+
+Package: node-lolex
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-type-detect
+Description: Fake JavaScript timers
+ JavaScript implementation of the timer APIs; setTimeout, clearTimeout,
+ setImmediate, clearImmediate, setInterval and clearInterval, along with a
+ clock instance that controls the flow of time. Lolex also provides a Date
+ implementation that gets its time from the clock.
+ .
+ Lolex can be used to simulate passing time in automated tests and other
+ situations where you want the scheduling semantics, but don't want to
+ actually wait. Lolex is extracted from Sinon.JS.

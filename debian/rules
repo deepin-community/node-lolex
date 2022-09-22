@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	browserify-lite ./src/lolex-src.js --outfile lolex.js
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS) $(DEB_BUILD_PROFILES)))
+	node -e "require('.')"
+	@echo Upstream test is played only during autopkgtest to avoid
+	@echo a circular dependency on node-sinon
+endif

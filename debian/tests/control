@@ -1,0 +1,7 @@
+Test-Command: /usr/share/pkg-js-autopkgtest/runner require
+Depends: @, nodejs, pkg-js-autopkgtest
+Restrictions: superficial
+
+Test-Command: /usr/share/pkg-js-autopkgtest/runner
+Depends: @, @builddeps@, pkg-js-autopkgtest, node-sinon (>= 7.4.2), mocha
+Restrictions: allow-stderr

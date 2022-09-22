@@ -1,0 +1,76 @@
+node-lolex (5.1.2+ds-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+  * Fix GitHub tags regex
+  * Fix filenamemangle
+  * Use dh-sequence-nodejs
+  * Update standards version to 4.6.0, no changes needed.
+  * Drop dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Mon, 15 Nov 2021 08:30:19 +0100
+
+node-lolex (5.1.2+ds-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 26 Dec 2019 08:40:30 +0100
+
+node-lolex (5.1.2+ds-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 5.1.2+ds
+  * Embed an old @sinonjs/commons to avoid circular dependency to node-sinon
+  * Link dependencies during build for browserify-lite
+  * Add dependency to node-type-detect
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 26 Dec 2019 08:40:06 +0100
+
+node-lolex (4.2.0+ds-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Back to unstable after successful tests
+  * Rebuild lolex.js using browserify-lite
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 19 Nov 2019 06:36:11 +0100
+
+node-lolex (4.2.0-1) experimental; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * New upstream version 4.2.0
+  * Switch test and install to pkg-js-tools
+  * Remove embedded modules: bane, referee
+  * Update debian/copyright
+  * Remove lintian overrides: real warning
+  * Update VCS fields to salsa
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 17 Sep 2019 10:49:24 +0200
+
+node-lolex (2.2.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Modernize packaging
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 11 Feb 2018 00:10:08 +0530
+
+node-lolex (1.5.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #840508)
+
+ -- Sruthi Chandran <srud@disroot.org>  Wed, 12 Oct 2016 17:14:44 +0530
